@@ -13,100 +13,114 @@
             padding: 0px;
             margin: 0px;
             font-family: dotum, Arial, sans-serif;
-            font-size: 12px;
             color: #9b9b9b;
         }
-        
-        .header {
-            border: 1px solid #eaeaea;
+
+        body {
+            font-size: 12px;
         }
-        
+
+        .header {
+            border: 0px solid #eaeaea;
+        }
+
         .contents {
             border: 0px solid #eaeaea;
         }
-        
+
         .contents>.information {
-            border: 1px solid #eaeaea;
+            border: 0px solid #eaeaea;
         }
-        
+
         .contents>.calendar {
-            border: 1px solid #eaeaea;
+            border: 0px solid #eaeaea;
         }
-        
+
         .contents>.calendar>#event-cal-container>.calendar {
             border: 0px;
             border-radius: 0px;
         }
-        
+
+        .contents>.calendar>#event-cal-container .day.event {
+            background-color: #ffd0d0;
+            padding: 5px;
+            border: 0px;
+        }
+
         .contents>.gallery {
-            border: 1px solid #eaeaea;
+            border: 0px solid #eaeaea;
             height: 500px;
         }
-        
-        .contents>.gallery>.swiper-container {
+
+        .swiper-container {
             width: 100%;
             height: 500px;
             margin-left: auto;
             margin-right: auto;
         }
-        
-        .contents>.gallery>.swiper-slide {
+
+        .swiper-slide {
             background-size: cover;
             background-position: center;
         }
-        
-        .contents>.gallery>.gallery-top {
+
+        .gallery-top {
             height: 80%;
             width: 100%;
         }
-        
-        .contents>.gallery>.gallery-thumbs {
+
+        .gallery-thumbs {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
         }
-        
-        .contents>.gallery>.gallery-thumbs .swiper-slide {
+
+        .gallery-thumbs .swiper-slide {
             width: 25%;
             height: 100%;
             opacity: 0.4;
         }
-        
-        .contents>.gallery>.gallery-thumbs .swiper-slide-thumb-active {
+
+        .gallery-thumbs .swiper-slide-thumb-active {
             opacity: 1;
         }
-        
+
         .contents>.location {
-            border: 1px solid #eaeaea;
+            border: 0px solid #eaeaea;
         }
-        
-        .footer {
-            background-color: #212121;
-            color: #979797;
-            border: 1px solid #eaeaea;
+
+        .contents .title {
             text-align: center;
             padding: 20px 0px;
         }
-        
+
+        .footer {
+            background-color: #212121;
+            color: #979797;
+            border: 0px solid #eaeaea;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
         .footer>.sns {
             padding: 20px 0px;
         }
-        
+
         .footer>.sns>ul {
             width: 150px;
             margin: 0 auto;
             overflow: hidden;
         }
-        
+
         .footer>.sns>ul>li {
             float: left;
         }
-        
+
         .footer>.sns>ul>li>img {
             width: 50px;
             height: 50px;
         }
-        
+
         .footer>.txt {
             padding: 20px 0px;
         }
@@ -115,22 +129,59 @@
 
 <body>
     <div class="wrap">
-        <div class="header">
-            header
+        <div class="header"
+            style="height:755px;position: relative;background-image: url( 'https://www.greetingsisland.com/images/invitations/wedding/Climbing%20Roses%20n.jpg');background-size: 550px;background-repeat: no-repeat;background-position: center center;"
+            back="background-size: 150%;">
+            <div
+                style="position:absolute;top:50%;left:50%;margin-left:-105px;margin-top:-50px;width:210px;height:100px;text-align: center;">
+                <div style="font-size:24px;font-weight:bold;">김도진<span style="font-size:18px;">그리고</span>이나영</div>
+                <div style="font-size:13px;letter-spacing: -1px;padding-top:20px;">
+                    2019.04.14 우리 결혼식에 초대 합니다.<br />
+                    W스퀘어 메인홀<br />
+                    12:30
+                </div>
+            </div>
         </div>
         <div class="contents">
             <div class="information">
-                information
+                <div class="title">
+                    <h2>INFORMATION</h2>
+                </div>
+                <div class="info" style="font-size:12px;text-align: center;line-height:25px;">
+                    서로의 마음과 서로의<br />
+                    믿음을 간직하며<br />
+                    저희 두 사람이 새 출발의<br />
+                    <br />
+                    첫 걸음을 내딛게 되었습니다.<br />
+                    <br />
+                    좋은 꿈, 바른 뜻으로<br />
+                    올바르게 살 수 있도록<br />
+                    축복과 격려를 해주시면<br />
+                    더 없는 기쁨으로<br />
+                    잘 간직하겠습니다.
+                </div>
+                <div style="font-size:12px;text-align: center;padding-top:30px;font-weight: bold;">
+                    도진,나영<br />
+                    올림
+                </div>
+                <div style="font-size:12px;text-align: center;padding:30px 0px;">
+                    김병옥, 최혜옥 의 장남 도진<br />
+                    이민기, 정소민 의 장녀 나영<br />
+                </div>
             </div>
-            <div class="calendar">
-                <div id="event-cal-container" class="calendar-container"></div>
+            <div class="title">
+                <h2>GALLERY</h2>
             </div>
             <div class="gallery">
                 <!-- Swiper -->
                 <div class="swiper-container gallery-top">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1567965142886-f347ae9b829b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)"></div>
-                        <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1567934538791-951c21d3bc52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)"></div>
+                        <div class="swiper-slide"
+                            style="background-image:url(https://images.unsplash.com/photo-1553102674-af685bb5fe40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image:url(https://images.unsplash.com/photo-1541250848049-b4f7141dca3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+                        </div>
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next swiper-button-white"></div>
@@ -138,14 +189,27 @@
                 </div>
                 <div class="swiper-container gallery-thumbs">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1567965142886-f347ae9b829b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)"></div>
-                        <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1567934538791-951c21d3bc52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)"></div>
+                        <div class="swiper-slide"
+                            style="background-image:url(https://images.unsplash.com/photo-1553102674-af685bb5fe40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image:url(https://images.unsplash.com/photo-1541250848049-b4f7141dca3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+                        </div>
                     </div>
                 </div>
                 <!-- Swiper -->
             </div>
+            <div class="calendar">
+                <div class="title">
+                    <h2>CALENDAR</h>
+                </div>
+                <div id="event-cal-container" class="calendar-container"></div>
+            </div>
             <div class="location">
-                location
+                <div class="title">
+                    <h2>LOCATION</h>
+                </div>
+                <div id="map" style="width:100%;height:300px;"></div>
             </div>
         </div>
         <div class="footer">
@@ -158,7 +222,7 @@
             </div>
             <div class="txt">
                 가나다라마바사
-                <br/> ⓒ URBAN-INCARD Corp. All Rights Reserved
+                <br /> ⓒ URBAN-INCARD Corp. All Rights Reserved
             </div>
         </div>
     </div>
@@ -186,12 +250,14 @@
     });
 </script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
 <script>
     // the semi-colon before function invocation is a safety net against concatenated
     // scripts and/or other plugins which may not be closed properly.
     ;
-    (function($, window, document, undefined) {
+    (function ($, window, document, undefined) {
 
         "use strict";
 
@@ -207,8 +273,8 @@
                 fixedStartDay: true, // Week begin always by monday
                 events: [], //List of event dates
                 eventsInfo: [], //List of event Info
-                selectCallback: function(selDate) {}, // Callback on date select
-                insertCallback: function() {} // Callback when an event is added to the calendar
+                selectCallback: function (selDate) { }, // Callback on date select
+                insertCallback: function () { } // Callback when an event is added to the calendar
             };
 
         // The actual plugin constructor
@@ -224,7 +290,7 @@
 
         // Avoid Plugin.prototype conflicts
         $.extend(Plugin.prototype, {
-            init: function() {
+            init: function () {
                 var container = $(this.element);
                 var todayDate = this.currentDate;
                 var events = this.events;
@@ -244,16 +310,16 @@
             },
 
             //Update the current month header
-            updateHeader: function(date, header) {
+            updateHeader: function (date, header) {
                 header.find('.month').html(this.settings.months[date.getMonth()]);
             },
 
-            testFunction: function(temp) {
+            testFunction: function (temp) {
                 //console.log('test function var = ' + temp);
             },
 
             //Build calendar of a month from date
-            buildCalendar: function(fromDate, calendar) {
+            buildCalendar: function (fromDate, calendar) {
                 var plugin = this;
 
                 calendar.find('table').remove();
@@ -321,7 +387,7 @@
                     tbody.append(tr);
                 }
 
-                tbody.on('click', '.day', function(e) {
+                tbody.on('click', '.day', function (e) {
                     var day = '' + $(e.currentTarget).text(),
                         month = '' + (plugin.currentDate.getMonth() + 1),
                         year = plugin.currentDate.getFullYear();
@@ -349,7 +415,7 @@
 
                 var eventContainer = $('<div class="event-container"><p class="event-date">Mar 01, 2019</p><h2 class="title">Event Name</h2><a href="#" class="close"></div>');
 
-                eventContainer.on('click', '.close', function(e) {
+                eventContainer.on('click', '.close', function (e) {
                     plugin.empty($(plugin.element), e.pageX, e.pageY);
                     e.preventDefault();
                 });
@@ -358,11 +424,11 @@
                 calendar.append(eventContainer);
             },
             //Init global events listeners
-            bindEvents: function() {
+            bindEvents: function () {
                 var plugin = this;
             },
             //Small effect to fillup a container
-            fillUp: function(elem, x, y) {
+            fillUp: function (elem, x, y) {
                 var plugin = this;
                 var elemOffset = elem.offset();
 
@@ -375,13 +441,13 @@
                 filler.animate({
                     width: "300%",
                     height: "300%"
-                }, 500, function() {
+                }, 500, function () {
                     $(plugin.element).find('.event-container').show();
                     filler.hide();
                 });
             },
             //Small effect to empty a container
-            empty: function(elem, x, y) {
+            empty: function (elem, x, y) {
                 var plugin = this;
                 var elemOffset = elem.offset();
 
@@ -396,12 +462,12 @@
                 filler.animate({
                     width: "0%",
                     height: "0%"
-                }, 500, function() {
+                }, 500, function () {
                     filler.remove();
                 });
             },
 
-            formatToYYYYMMDD: function(date) {
+            formatToYYYYMMDD: function (date) {
                 var d = new Date(date),
                     day = '' + d.getDate(),
                     month = '' + (d.getMonth() + 1),
@@ -416,8 +482,8 @@
 
         // A really lightweight plugin wrapper around the constructor,
         // preventing against multiple instantiations
-        $.fn[pluginName] = function(options) {
-            return this.each(function() {
+        $.fn[pluginName] = function (options) {
+            return this.each(function () {
                 if (!$.data(this, "plugin_" + pluginName)) {
                     $.data(this, "plugin_" + pluginName, new Plugin(this, options));
                 }
@@ -426,13 +492,37 @@
 
     })(jQuery, window, document);
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         //test
         $("#event-cal-container").simpleCalendar({
             events: ['2019-09-28'],
             eventsInfo: ['John\'s Birthday'],
         });
     });
+</script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c8dcf002e3cb41a603da7f0d485b5f0b"></script>
+<script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    // 마커가 표시될 위치입니다 
+    var markerPosition = new kakao.maps.LatLng(33.450701, 126.570667);
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+
+    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+    // marker.setMap(null);    
 </script>
 
 </html>

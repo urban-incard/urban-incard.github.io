@@ -56,6 +56,16 @@ li {
     padding: 5px;
     border: 0px;
 }
+.calendar .event-container {
+    background: #eaeaea; 
+}
+  .calendar .filler {
+    background: #eaeaea;
+}
+
+.event-container>.close:before, .event-container>.close:after {
+    background-color: #000;
+  }
 
 .contents>.gallery {
     border: 0px solid #eaeaea;

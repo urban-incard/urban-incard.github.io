@@ -1,0 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #3a3a3a;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    font-size: 12px;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.header {
+    border: 0px solid #eaeaea;
+}
+
+.contents {
+    border: 0px solid #eaeaea;
+}
+
+.contents>.information {
+    border: 0px solid #eaeaea;
+}
+
+.contents>.information >.info {
+    font-size:14px;text-align: center;line-height:25px;
+}
+
+.contents>.information >.name {
+    font-size:14px;text-align: center;padding-top:30px;font-weight: bold;
+}
+
+.contents>.information >.parent {
+    font-size:14px;text-align: center;padding:30px 0px;
+}
+
+.contents>.calendar {
+    border: 0px solid #eaeaea;
+}
+
+.contents>.calendar>#event-cal-container>.calendar {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.contents>.calendar>#event-cal-container .day.event {
+    background-color: #ffd0d0;
+    padding: 5px;
+    border: 0px;
+}
+
+.contents>.gallery {
+    border: 0px solid #eaeaea;
+    height: 500px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.contents>.location {
+    border: 0px solid #eaeaea;
+}
+
+.contents .title h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.contents > .location > #map {
+    width:100%;height:300px;
+}
+
+.contents > .location > .map_info {
+    padding:30px;font-size:14px;
+}
+
+.contents > .location > .map_info > .addr {
+    color:#5d5d5d;font-weight: bold;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    color: #979797;
+    border: 0px solid #eaeaea;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footer>.sns {
+    padding: 20px 0px;
+}
+
+.footer>.sns>ul {
+    width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer>.sns>ul>li {
+    float: left;
+    padding: 5px;
+    list-style: none;
+}
+
+.footer>.sns>ul>li>img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer>.txt {
+    padding: 20px 0px;
+}
+
+.footer img{
+    width:40px;height:40px;
+}

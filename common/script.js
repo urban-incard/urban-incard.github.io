@@ -112,7 +112,7 @@ function map_set(lat, lng) {
             var tbody = $('<tbody></tbody>');
 
             //Header day in a week ( (1 to 8) % 7 to start the week by monday)
-            for (var i = 1; i <= this.settings.days.length; i++) {
+            for (var i = 0; i <= this.settings.days.length - 1; i++) {
                 thead.append($('<td>' + this.settings.days[i % 7].substring(0, 3) + '</td>'));
             }
 
@@ -121,9 +121,9 @@ function map_set(lat, lng) {
                 m = fromDate.getMonth();
 
             //first day of the month
-            var firstDay = new Date(y, m, 1);
+            var firstDay = new Date(y, m, 0);
             //If not monday set to previous monday
-            while (firstDay.getDay() != 1) {
+            while (firstDay.getDay() != 0) {
                 firstDay.setDate(firstDay.getDate() - 1);
             }
             //last day of the month

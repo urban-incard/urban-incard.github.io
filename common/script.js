@@ -298,7 +298,7 @@ function gallery_init() {
 function gallery_url_set(_gallery_url) {
     var html = "";
     for (var i = 0; i < _gallery_url.length; i++) {
-        html += '<div class="swiper-slide" style="background-image:url(' + _gallery_url[i] + ')"><a target="_blank" style="background-color:#fff;color:#000;">크게보기</a></div>';
+        html += '<div class="swiper-slide" style="background-image:url(' + _gallery_url[i] + ')"><a target="_blank" style="background-color: #fff;    color: #000;    position: absolute;    top: 0;    right: 0px;    padding: 3px;    font-size: 12px;">크게보기</a></div>';
     }
 
     $(".swiper-wrapper").html(html);

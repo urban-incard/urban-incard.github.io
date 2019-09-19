@@ -1,4 +1,5 @@
 window.dataLayer = window.dataLayer || [];
+
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 
@@ -31,7 +32,7 @@ function map_set(lat, lng) {
 // the semi-colon before function invocation is a safety net against concatenated
 // scripts and/or other plugins which may not be closed properly.
 ;
-(function ($, window, document, undefined) {
+(function($, window, document, undefined) {
 
     "use strict";
 
@@ -48,8 +49,8 @@ function map_set(lat, lng) {
             fixedStartDay: true, // Week begin always by monday
             events: [], //List of event dates
             eventsInfo: [], //List of event Info
-            selectCallback: function (selDate) { }, // Callback on date select
-            insertCallback: function () { } // Callback when an event is added to the calendar
+            selectCallback: function(selDate) {}, // Callback on date select
+            insertCallback: function() {} // Callback when an event is added to the calendar
         };
 
     // The actual plugin constructor
@@ -65,7 +66,7 @@ function map_set(lat, lng) {
 
     // Avoid Plugin.prototype conflicts
     $.extend(Plugin.prototype, {
-        init: function () {
+        init: function() {
             var container = $(this.element);
             var todayDate = this.currentDate;
             var events = this.events;
@@ -91,18 +92,18 @@ function map_set(lat, lng) {
         },
 
         //Update the current month header
-        updateHeader: function (date, header) {
+        updateHeader: function(date, header) {
             header.find('.year').html(date.getFullYear());
             header.find('.month').html(this.settings.months[date.getMonth()]);
             header.find('.month_en').html(this.settings.months_en[date.getMonth()]);
         },
 
-        testFunction: function (temp) {
+        testFunction: function(temp) {
             //console.log('test function var = ' + temp);
         },
 
         //Build calendar of a month from date
-        buildCalendar: function (fromDate, calendar) {
+        buildCalendar: function(fromDate, calendar) {
             var plugin = this;
 
             calendar.find('table').remove();
@@ -170,7 +171,7 @@ function map_set(lat, lng) {
                 tbody.append(tr);
             }
 
-            tbody.on('click', '.day', function (e) {
+            tbody.on('click', '.day', function(e) {
                 var day = '' + $(e.currentTarget).text(),
                     month = '' + (plugin.currentDate.getMonth() + 1),
                     year = plugin.currentDate.getFullYear();
@@ -198,7 +199,7 @@ function map_set(lat, lng) {
 
             var eventContainer = $('<div class="event-container"><p class="event-date">Mar 01, 2019</p><h2 class="title">Event Name</h2><a href="#" class="close"></div>');
 
-            eventContainer.on('click', '.close', function (e) {
+            eventContainer.on('click', '.close', function(e) {
                 plugin.empty($(plugin.element), e.pageX, e.pageY);
                 e.preventDefault();
             });
@@ -207,11 +208,11 @@ function map_set(lat, lng) {
             calendar.append(eventContainer);
         },
         //Init global events listeners
-        bindEvents: function () {
+        bindEvents: function() {
             var plugin = this;
         },
         //Small effect to fillup a container
-        fillUp: function (elem, x, y) {
+        fillUp: function(elem, x, y) {
             var plugin = this;
             var elemOffset = elem.offset();
 
@@ -224,13 +225,13 @@ function map_set(lat, lng) {
             filler.animate({
                 width: "300%",
                 height: "300%"
-            }, 500, function () {
+            }, 500, function() {
                 $(plugin.element).find('.event-container').show();
                 filler.hide();
             });
         },
         //Small effect to empty a container
-        empty: function (elem, x, y) {
+        empty: function(elem, x, y) {
             var plugin = this;
             var elemOffset = elem.offset();
 
@@ -245,12 +246,12 @@ function map_set(lat, lng) {
             filler.animate({
                 width: "0%",
                 height: "0%"
-            }, 500, function () {
+            }, 500, function() {
                 filler.remove();
             });
         },
 
-        formatToYYYYMMDD: function (date) {
+        formatToYYYYMMDD: function(date) {
             var d = new Date(date),
                 day = '' + d.getDate(),
                 month = '' + (d.getMonth() + 1),
@@ -265,8 +266,8 @@ function map_set(lat, lng) {
 
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
-    $.fn[pluginName] = function (options) {
-        return this.each(function () {
+    $.fn[pluginName] = function(options) {
+        return this.each(function() {
             if (!$.data(this, "plugin_" + pluginName)) {
                 $.data(this, "plugin_" + pluginName, new Plugin(this, options));
             }
@@ -304,6 +305,13 @@ function gallery_url_set(_gallery_url) {
     $(".swiper-wrapper").html(html);
 
     gallery_init();
+
+    $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function() {
+        var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
+        location.href = img_url;
+    });
+
+    $(".swiper-wrapper").css("width", 99999);
 }
 
 function calendar_set(_mname, _wname, _weddingDate) {

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[김도진] 첫생일에 초대합니다.(babycard1)</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="https://urban-incard.github.io/babycard1/web_share.jpg" />
+    <meta property="og:title" content="[김도진] 첫생일에 초대합니다.(babycard1)" />
+    <meta property="og:description" content="[김도진] 첫생일에 초대합니다.(babycard1)" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/swiper.min.css">
+    <!--Calendar's CSS -->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/simple-calendar.css">
+    <!--Common's CSS-->
+    <link rel="stylesheet" href="https://urban-incard.github.io/common/style.css">
+    <!--babycard1 CSS-->
+    <link rel="stylesheet" href="/babycard1/css/babycard1.css">
+
+    <script>
+        var gallery_url = [];
+        gallery_url.push("https://images.unsplash.com/photo-1546015720-b8b30df5aa27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        gallery_url.push("https://images.unsplash.com/photo-1542385151-efd9000785a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+        gallery_url.push("https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+        gallery_url.push("https://images.unsplash.com/photo-1562886958-38745dbe4fc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        var mname = "도진이";
+        var wname = "";
+        var weddingDate = "2019-08-24";
+        var lat = 37.5050412;
+        var lng = 127.0343413;
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="type1.jpg" style="width:100%;" />
+        </div>
+        <div class="contents">
+            <div class="information">
+                <div class="title">
+                    <h2>초대글</h2>
+                </div>
+                <div class="info">
+                    10달의 설레임과<br />12달의 행복으로<br />무럭무럭 자란<br />
+                    <br /> 도진이의 첫번째 생일을 맞이했습니다.<br />
+                    <br /> 소중한 자리, 소중한 분들을<br />모시고자 합니다.<br />바쁘시더라도 자리 하셔서<br /> 도진이를 축하해 주시면<br /> 정말 감사 하겠습니다.
+                </div>
+                <div class="name">
+                    승헌,나영<br /> 아빠,엄마
+                </div>
+            </div>
+            <div class="title">
+                <h2>갤러리</h2>
+            </div>
+            <div class="gallery">
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper"></div>
+                </div>
+                <!-- Swiper -->
+            </div>
+            <div class="calendar">
+                <div class="title">
+                    <h2>달력</h>
+                </div>
+                <div id="event-cal-container" class="calendar-container"></div>
+            </div>
+            <div class="location">
+                <div class="title">
+                    <h2>위치안내</h>
+                </div>
+                <div id="map"></div>
+                <div class="map_info">
+                    <span>서울 강남구 역삼1동 202-2</span><br />
+                    <span class="addr">어반인카드 7층 사랑홀</span><br /><br />
+                    <span>02-1234-1534</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="sns">
+                <ul>
+                    <li><a href="https://urban-incard.github.io/" target="_blank"><img
+                                src="https://urban-incard.github.io/images/ui_logo.jpg"></a>
+                    </li>
+                    <li><a href="https://smartstore.naver.com/urbanincard" target="_blank"><img
+                                src="https://urban-incard.github.io/images/nv_logo.png"></a></li>
+                    <li><a href="https://www.instagram.com/urban.incard/" target="_blank"><img
+                                src="https://urban-incard.github.io/images/ig_logo.png"></a></li>
+                </ul>
+            </div>
+            <div class="txt">
+                모바일 초대장/청첩장은 어반인카드
+                <br /> ⓒ URBAN-INCARD Corp. All Rights Reserved
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//www.googletagmanager.com/gtag/js?id=UA-124498612-2"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c8dcf002e3cb41a603da7f0d485b5f0b"></script>
+<script src="https://urban-incard.github.io/common/swiper.min.js"></script>
+<script src="https://urban-incard.github.io/common/script.js"></script>
+<script src="/babycard1/js/babycard1.js"></script>
+<script>
+    $(function () {
+        gallery_url_set(gallery_url);
+
+        calendar_set(mname, wname, weddingDate, "baby");
+
+        map_set(lat, lng);
+    });
+</script>
+
+</html>

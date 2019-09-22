@@ -1,0 +1,18 @@
+body{background-color: #fff;}
+.header {position: relative;}
+.header > .top{margin:50px 30px;position:relative;}
+.header > .top > .name{font-size:26px;font-weight:bold;font-weight: 300;}
+.header > .top > .name span{font-size:14px;font-weight: 300;}
+.header > .top > .pos{font-size:13px;letter-spacing: 0px;padding-top:40px;font-weight: 300;line-height:25px;}
+.header > .top > .object{position: absolute;top:-15px;right:0px;}
+.header > .top > .object img{width:80px;}
+.header > .bottom {padding:0px 30px;}
+.header > .bottom img{width:100%;}
+
+.contents>.calendar>#event-cal-container .day.event{
+    background-color:#dcdcdc;
+}
+
+.contents .title h2{    
+    color: #69a991;
+}

@@ -1,0 +1,11 @@
+body{background-color: #fff;}
+.header {position: relative;}
+.header > .bgimg > img{width:100%;}
+
+.contents>.calendar>#event-cal-container .day.event{
+    background-color:#dcdcdc;
+}
+
+.contents .title h2{    
+    color: #87a6ad;
+}

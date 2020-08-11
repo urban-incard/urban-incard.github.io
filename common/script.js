@@ -308,7 +308,7 @@ function gallery_url_set(_gallery_url) {
 
     $(".swiper-wrapper").eq(0).find(".swiper-slide").click(function () {
         var img_url = $(this).css("background-image").replace('url("', '').replace('")', '');
-        location.href = img_url;
+        //location.href = img_url;
     });
 
     $(".swiper-wrapper").css("width", 99999);

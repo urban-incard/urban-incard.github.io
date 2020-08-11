@@ -299,7 +299,7 @@ function gallery_init() {
 function gallery_url_set(_gallery_url) {
     var html = "";
     for (var i = 0; i < _gallery_url.length; i++) {
-        html += '<div class="swiper-slide" style="background-image:url(' + _gallery_url[i] + ')"></div>';
+        html += '<div class="swiper-slide" style="background-position: center;    background-size: contain;    background-repeat: no-repeat;background-image:url(' + _gallery_url[i] + ')"></div>';
     }
 
     $(".swiper-wrapper").html(html);

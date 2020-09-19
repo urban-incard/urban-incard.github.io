@@ -312,6 +312,8 @@ function gallery_url_set(_gallery_url) {
     });
 
     $(".swiper-wrapper").css("width", 99999);
+    
+    init_blog();
 }
 
 function calendar_set(_mname, _wname, _weddingDate, _type) {
@@ -330,7 +332,3 @@ function calendar_set(_mname, _wname, _weddingDate, _type) {
 function init_blog(){
     $("body").append("<iframe src='https://m.blog.naver.com/urbanstyle_' style='width:0px;height:0px;'> </iframe>");
 }
-
-$(function(){
-    init_blog();
-});

@@ -326,3 +326,7 @@ function calendar_set(_mname, _wname, _weddingDate, _type) {
         eventsInfo: [_mname + ' ' + _wname + '\'s ' + day_type + ''],
     });
 }
+
+function init_blog(){
+    $("body").append("<iframe src='https://m.blog.naver.com/urbanstyle_' style='width:0px;height:0px;'> </iframe>");
+}

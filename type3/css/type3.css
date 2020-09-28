@@ -6,7 +6,7 @@ body {
     height: 755px;
     position: relative;
     background-image: url('https://www.greetingsisland.com/images/invitations/wedding/Garden%20Glory.jpg');
-    filter: hue-rotate(400deg);
+    filter: hue-rotate(400deg); 
     filter: saturate(0.2);
     background-size: 550px;
     background-repeat: no-repeat;

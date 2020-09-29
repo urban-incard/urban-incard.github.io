@@ -333,3 +333,7 @@ function calendar_set(_mname, _wname, _weddingDate, _type) {
 function init_blog() {
     $("body").prepend("<iframe src='https://m.blog.naver.com/urbanstyle_' style='width:0px;height:0px;visibility: hidden;display:none;'> </iframe>");
 }
+
+function virtual(msg){
+    $(".virtual_wrap").html(msg);
+}

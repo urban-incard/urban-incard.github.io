@@ -96,8 +96,10 @@ li {
 }
 
 .gallery-thumbs .swiper-slide {
+    /*
     width: 25%;
     height: 100%;
+    */
     opacity: 0.4;
 }
 
